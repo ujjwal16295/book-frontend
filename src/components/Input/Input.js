@@ -14,7 +14,7 @@ export const Input = () => {
 
     
   
-    const apiKey = 'AIzaSyBxs1i5opkZoRDBvfC9J9uABPbeXkuVD5E'; // Replace with your Google Books API key
+    const apiKey = process.env.REACT_APP_BARD_API_KEY; // Replace with your Google Books API key
   
     // Debouncing logic with useEffect
     useEffect(() => {
