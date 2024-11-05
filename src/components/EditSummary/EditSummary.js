@@ -35,7 +35,7 @@ export const EditSummary = () => {
 
     setLoading(true)
     console.log("edit summary"+summary)
-    const res= await fetch(`http://localhost:8000/usersummary`, {
+    const res= await fetch(`https://book-backend-vy6c.onrender.com/usersummary`, {
         method: 'PUT',   
         headers: {
             'Accept': 'application/json',

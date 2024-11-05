@@ -42,7 +42,7 @@ export const AddSummary = () => {
         console.log(userSlice)
     
     
-        const res= await fetch('http://localhost:8000/summary', {
+        const res= await fetch('https://book-backend-vy6c.onrender.com/summary', {
             method: 'POST',
             headers: {
               'Accept': 'application/json',

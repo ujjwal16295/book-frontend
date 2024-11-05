@@ -36,7 +36,7 @@ export const UserSummary = () => {
     setLoading(true)
 
 
-    const res= await fetch(`http://localhost:8000/usersummary?id=${encodeURIComponent(id)}`, {
+    const res= await fetch(`https://book-backend-vy6c.onrender.com/usersummary?id=${encodeURIComponent(id)}`, {
         method: 'GET',    
       });
     

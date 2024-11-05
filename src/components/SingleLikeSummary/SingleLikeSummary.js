@@ -55,7 +55,7 @@ export const SingleLikeSummary = () => {
     async function getLike(){
       setLoading(true)
         console.log(summary)
-        const res= await fetch(`http://localhost:8000/like?bid=${encodeURIComponent(bid)}&username=${encodeURIComponent(userSlice[0]?.username)}`, {
+        const res= await fetch(`https://book-backend-vy6c.onrender.com/like?bid=${encodeURIComponent(bid)}&username=${encodeURIComponent(userSlice[0]?.username)}`, {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
@@ -90,7 +90,7 @@ export const SingleLikeSummary = () => {
 
     async function editLike(){
       setLoading(true)
-        const res= await fetch('http://localhost:8000/like', {
+        const res= await fetch('https://book-backend-vy6c.onrender.com/like', {
             method: 'POST',
             headers: {
               'Accept': 'application/json',

@@ -33,7 +33,7 @@ export const Likes = () => {
 
     setLoading(true)
 
-    const res= await fetch(`http://localhost:8000/likeBooks?username=${encodeURIComponent(userSlice[0].username)}`, {
+    const res= await fetch(`https://book-backend-vy6c.onrender.com/likeBooks?username=${encodeURIComponent(userSlice[0].username)}`, {
         method: 'GET',    
       });
     

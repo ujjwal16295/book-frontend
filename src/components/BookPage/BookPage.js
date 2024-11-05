@@ -95,7 +95,7 @@ function nextBackButton(button){
     console.log("fhffhhf")
     
     //cannot add body in get use query parameter
-    const res= await fetch(`http://localhost:8000/userbooksummary?bookname=${encodeURIComponent(bookName)}`, {
+    const res= await fetch(`https://book-backend-vy6c.onrender.com/userbooksummary?bookname=${encodeURIComponent(bookName)}`, {
         method: 'GET',
       });
     
@@ -145,7 +145,7 @@ function nextBackButton(button){
   async function getBookSummary (bookname){
     setLoading(true)
     console.log("hit")
-   fetch(`http://localhost:8000/bookSummary?bookname=${encodeURIComponent(bookname)}`)
+   fetch(`https://book-backend-vy6c.onrender.com/bookSummary?bookname=${encodeURIComponent(bookname)}`)
   .then(response => response.json())
   .then(data => {setSummary(data.response.response.candidates[0].content.parts[0].text)  
      setLoading(false)
@@ -170,7 +170,7 @@ function nextBackButton(button){
     console.log(summary)
     console.log("like ujjwal")
     console.log(carouselCount)
-    const res= await fetch(`http://localhost:8000/like?bid=${encodeURIComponent(allSummary[carouselCount-1]?._id)}&username=${encodeURIComponent(userSlice[0]?.username)}`, {
+    const res= await fetch(`https://book-backend-vy6c.onrender.com/like?bid=${encodeURIComponent(allSummary[carouselCount-1]?._id)}&username=${encodeURIComponent(userSlice[0]?.username)}`, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -209,7 +209,7 @@ function nextBackButton(button){
   async function postLike(){
     setLikeLoading(true)
     if(localStorage.getItem("token")){
-      const res= await fetch('http://localhost:8000/like', {
+      const res= await fetch('https://book-backend-vy6c.onrender.com/like', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
