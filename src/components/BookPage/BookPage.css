@@ -1,0 +1,128 @@
+.book{
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+.book-title{
+
+    padding:10px;
+    font-size: x-large;
+
+}
+
+.summary{
+    color: white;
+    text-align: left;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    right: 30%;
+    border: solid;
+    border-radius: 2%;
+    border-color: black;
+    margin-top: 10px;
+    background-color: #D3D3D3;
+    padding: 20px;
+    line-height: 1.5;
+}
+.circular{
+    border-radius: 50%;
+    background-color: lightgray;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+.addSummaryContainer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nextHidden{
+
+    visibility: hidden;
+}
+
+.backHidden{
+
+    visibility: hidden;
+
+}
+
+
+
+.userBookSummary {
+    color: white;
+    text-align: left;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    right: 30%;
+    border: solid;
+    border-radius: 2%;
+    border-color: black;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #D3D3D3;
+    padding: 20px;
+    line-height: 1.5;
+    /* transition: background-color 0.3s ease-in-out ; */
+    transition: opacity 0.3s ease-in-out; 
+}
+.userBookSummaryHidden{
+    opacity:0;
+    /* background-color: brown; */
+}
+
+.noSummary{
+    margin-top: 50px;
+}
+
+.LikeContainer{
+    display: flex;
+    position: relative;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    justify-content: space-around;
+    margin: 20px;
+}
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;       /* Adjust size as needed */
+    height: 70px;      /* Same as width for a perfect circle */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #f0f0f0;
+    font-size: 16px;    /* Adjust font size as needed */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+
+  }
+  
+  .count {
+    margin-top: 5px;    /* Adjust spacing between "like" and "0" */
+    font-size: 20px;    /* Adjust font size for the count as needed */
+  }
+
+  .like:hover{
+    transform:scale(1.2);
+
+
+  }
+
+  .green{
+    background-color: green;
+    color: white;
+  }

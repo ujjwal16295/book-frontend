@@ -1,0 +1,24 @@
+
+
+.EditSummaryContianer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.EditSummaryText{
+    position: absolute;
+    top: 10px;
+    font-size: x-large;
+}
+.EditTextArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.editSummarySpinner{
+    text-align: center;
+}

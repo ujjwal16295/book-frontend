@@ -1,0 +1,54 @@
+.logout{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.logout-table{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr; 
+background-color: white;
+border-radius: 5px;
+border-color: black;
+border-style: solid;
+}
+
+.logout-item-1{
+    padding: 20px;
+    border-right:solid ;
+    border-color: black;
+    border-bottom:solid ;
+}
+
+.logout-item-2{
+    padding: 20px;
+    border-bottom:solid ;
+    border-color: black;
+}
+
+.profile{
+    text-align: center;
+    padding: 10px;
+}
+
+.logout-button{
+
+
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.logout-button:hover{
+    transform: scale(1.2);
+}

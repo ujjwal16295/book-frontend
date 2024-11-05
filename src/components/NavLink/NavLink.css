@@ -1,0 +1,31 @@
+.NavLink{
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: font-size 0.3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+.NavLink:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.NavLink-Transition{
+    visibility: hidden;
+  
+}
+
+
+.Navlink-Click{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    font-size: 20px;
+}

@@ -1,0 +1,24 @@
+
+
+.AddSummaryContianer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AddSummaryText{
+    position: absolute;
+    top: 10px;
+    font-size: x-large;
+}
+.TextArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.addSummarySpinner{
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+.Navbar{
+
+    position: fixed;
+    background-color: blue;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: width 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.Navbar-transition{
+    width:2%;
+    /* visibility: hidden; */
+}
+
+.NavLinks{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+.NavTitle{
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+
+.NavTitle-transition{
+    visibility: hidden;
+}

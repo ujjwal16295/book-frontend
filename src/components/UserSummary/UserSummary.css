@@ -1,0 +1,78 @@
+.big-container-usersummary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.userSummaryContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    width: 40%;
+    gap: 20px;
+    position: absolute;
+    top: 60px;
+
+
+
+}
+
+
+.userSummary{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+
+}
+
+.userSummary:hover{
+    transform:scale(1.2);
+    
+}
+
+.author{
+    text-align: center;
+    padding: 10px;
+}
+
+.summaryOfUser{
+    padding: 10px;
+}
+
+.userSummaryText{
+    position: absolute;
+    top: 10px;
+    font-size: x-large;
+}
+
+.userLike{
+    text-align: center;
+    padding: 10px;
+}
+
+.greenUserLike{
+
+    color: green;
+}
+.redUserLike{
+    color: red;
+}
+
+.big-container-usersummary-spinner{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.no-summary{
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}

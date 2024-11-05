@@ -1,0 +1,43 @@
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 70px;
+    width: 30%;
+    border-radius: 2%;
+    border-color: black;
+    border-style: solid;
+}
+
+.login-text{
+    position: absolute;
+    top:10px;
+    font-size: x-large;
+}
+.login-link{
+  text-align: center;
+
+}
+.login-link:hover{
+    cursor: pointer;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+}
+.loginSpinner{
+    text-align: center;
+}
